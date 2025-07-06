@@ -1,0 +1,23 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:18.17
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Install Playwright
+          command: npx playwright install
+      - run:
+          name: Run Playwright Tests
+          command: npx playwright test
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
