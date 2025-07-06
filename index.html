@@ -1,0 +1,581 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nabila Game & Music Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+    header, footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 { color: #0ff; margin-bottom: 5px; }
+    nav { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 10px 0; }
+    nav button {
+      background: #0ff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section { display: none; max-width: 1000px; margin: auto; padding: 20px; }
+    section.active { display: block; }
+    .music-card, .game-card {
+      background: #1a1a1a;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    iframe { width: 100%; height: 300px; border-radius: 10px; }
+    .form-card input, .form-card textarea {
+      width: 100%; padding: 10px; margin-top: 10px; border-radius: 6px; border: none;
+    }
+    .form-card button {
+      margin-top: 10px;
+      padding: 10px;
+      background: #0f0;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .rating-stars {
+      font-size: 1.2rem;
+      color: gold;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nabila Game & Music Hub 🎮🎵</h1>
+    <p>Main Game + Dengerin Lagu + Rilis Musik Kamu Di Sini</p>
+    <button class="bg-music-control" onclick="toggleMusic()">🔇 Matikan Musik</button>
+  </header>  <nav>
+    <button onclick="showTab('musik')">Daftar Rilis Lagu</button>
+    <button onclick="showTab('game')">Galeri Game Nostalgia</button>
+    <button onclick="showTab('topup')">Topup Koin</button>
+    <button onclick="showTab('voting')">Voting Request</button>
+    <button onclick="showTab('partner')">Daftar Rilis Lagu</button>
+  </nav>  <section id="musik" class="active">
+    <!-- 🔻 DAFTAR LAGU WAJIB FULL: Katalog Rilisan Nabila Ahmad -->
+    <div class="music-card">
+      <h3>Cinta Yg Direlakan - Nabila Ahmad</h3>
+      <iframe src="https://www.youtube.com/embed/ovtfUmmI7Jw" allowfullscreen></iframe>
+    </div>
+    <div class="music-card">
+      <h3>Drunk Confessions - Nabila Ahmad</h3>
+      <iframe src="https://www.youtube.com/embed/lreJMSzZe9s" allowfullscreen></iframe>
+    </div>
+    <!-- 🎶 DAFTAR RILIS LAGU NABILAH AHMAD -->
+<div class="music-card">
+  <h3>Cinta Yg Direlakan - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/ovtfUmmI7Jw" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Drunk Confessions - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/lreJMSzZe9s" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Sepatu Tua - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/pEj8HCr-8qo" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Wanita Penjual Sayur - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/Uc_cIhb9q44" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Broken Home Anthem - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/7MGsLhPD1ms" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Janda Nakal - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/kR8Oz7mU8cA" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Kenangan Dijalan Sepi - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/z5orh-Aumus" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Charting The Unknown - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/gkoV9Etgtz0" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Suami Manja - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/Vm65ECYLfzU" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>The Pleasure Of Love - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/AQMPILL8ukg" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Secangkir Kopi Dan Sepotong Roti - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_lFARTDWS5rfEyo5Rbz9NQK1RcCx9B1TKA" allowfullscreen></iframe>
+</div>
+
+<div class="music-card">
+  <h3>Last On The Tracks - Nabila Ahmad</h3>
+  <iframe src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_lHuRVZMuVd3JSjOc9aDfwVWQhKTrY0nwU" allowfullscreen></iframe>
+</div>
+    <!-- 🔻 TAMBAHKAN LAGU LAIN DI SINI -->
+  </section>  <section id="game">
+    <!-- 🔻 GAME NOSTALGIA -->
+    <div class="game-card">
+      <h3>Super Mario Bros</h3>
+      <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+      <iframe src="https://www.retrogames.cc/embed/20021-super-mario-bros.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+      <h3>Captain Commando</h3>
+      <div class="rating-stars">⭐⭐⭐⭐</div>
+      <iframe src="https://www.retrogames.cc/embed/17820-captain-commando.html" allowfullscreen></iframe>
+    </div>
+    <div class="game-card">
+  <h3>Super Mario Bros</h3>
+  <iframe src="https://www.retrogames.cc/embed/20009-super-mario-bros-nes.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Contra</h3>
+  <iframe src="https://www.retrogames.cc/embed/20002-contra-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Captain Commando</h3>
+  <iframe src="https://www.retrogames.cc/embed/26626-captain-commando-world-911202.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>The Punisher</h3>
+  <iframe src="https://www.retrogames.cc/embed/26558-the-punisher.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Final Fight</h3>
+  <iframe src="https://www.retrogames.cc/embed/26356-final-fight.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Street Fighter II</h3>
+  <iframe src="https://www.retrogames.cc/embed/26349-street-fighter-ii-the-world-warrior.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Double Dragon</h3>
+  <iframe src="https://www.retrogames.cc/embed/26345-double-dragon.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Adventure Island</h3>
+  <iframe src="https://www.retrogames.cc/embed/19992-adventure-island-nes.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Bomberman</h3>
+  <iframe src="https://www.retrogames.cc/embed/20324-bomberman-nes.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Donkey Kong</h3>
+  <iframe src="https://www.retrogames.cc/embed/20138-donkey-kong-classic-nes.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Sonic The Hedgehog</h3>
+  <iframe src="https://www.retrogames.cc/embed/19281-sonic-the-hedgehog.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Metal Slug</h3>
+  <iframe src="https://www.retrogames.cc/embed/26364-metal-slug-super-vehicle-001.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>X-Men</h3>
+  <iframe src="https://www.retrogames.cc/embed/26389-x-men-2-player-ver-us.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Cadillacs and Dinosaurs</h3>
+  <iframe src="https://www.retrogames.cc/embed/26538-cadillacs-and-dinosaurs.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Snow Bros</h3>
+  <iframe src="https://www.retrogames.cc/embed/26476-snow-bros-nick-tom.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Mortal Kombat</h3>
+  <iframe src="https://www.retrogames.cc/embed/26363-mortal-kombat.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Popeye</h3>
+  <iframe src="https://www.retrogames.cc/embed/20041-popeye-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Aladdin</h3>
+  <iframe src="https://www.retrogames.cc/embed/20504-disney-s-aladdin-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Joe & Mac</h3>
+  <iframe src="https://www.retrogames.cc/embed/19432-joe-mac.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Battletoads</h3>
+  <iframe src="https://www.retrogames.cc/embed/20025-battletoads.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Tank 1990</h3>
+  <iframe src="https://www.retrogames.cc/embed/20501-tank-1990.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Flintstones</h3>
+  <iframe src="https://www.retrogames.cc/embed/20094-the-flintstones-the-rescue-of-dino-hoppy.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Chip 'n Dale Rescue Rangers</h3>
+  <iframe src="https://www.retrogames.cc/embed/20087-chip-n-dale-rescue-rangers-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Tiny Toon Adventures</h3>
+  <iframe src="https://www.retrogames.cc/embed/20090-tiny-toon-adventures-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Tekken 3</h3>
+  <iframe src="https://www.retrogames.cc/embed/26545-tekken-3.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+    <div class="game-card">
+  <h3>Dragon Ball Z - Super Butouden</h3>
+  <iframe src="https://www.retrogames.cc/embed/19256-dragon-ball-z-super-butouden-japan.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Power Rangers - The Fighting Edition</h3>
+  <iframe src="https://www.retrogames.cc/embed/19239-mighty-morphin-power-rangers-the-fighting-edition-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Spider-Man</h3>
+  <iframe src="https://www.retrogames.cc/embed/26369-spider-man-the-videogame.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Tetris</h3>
+  <iframe src="https://www.retrogames.cc/embed/20023-tetris-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Pac-Man</h3>
+  <iframe src="https://www.retrogames.cc/embed/20021-pac-man-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Puzzle Bobble</h3>
+  <iframe src="https://www.retrogames.cc/embed/26365-puzzle-bobble.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Final Fight 2</h3>
+  <iframe src="https://www.retrogames.cc/embed/19389-final-fight-2-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Cadillacs and Dinosaurs 2</h3>
+  <iframe src="https://www.retrogames.cc/embed/26552-cadillacs-and-dinosaurs-2.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Mighty Morphin Power Rangers - SNES</h3>
+  <iframe src="https://www.retrogames.cc/embed/19248-mighty-morphin-power-rangers-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Duck Hunt</h3>
+  <iframe src="https://www.retrogames.cc/embed/20111-duck-hunt-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Teenage Mutant Ninja Turtles</h3>
+  <iframe src="https://www.retrogames.cc/embed/26346-teenage-mutant-ninja-turtles.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Little Nemo: The Dream Master</h3>
+  <iframe src="https://www.retrogames.cc/embed/20104-little-nemo-the-dream-master-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Bubble Bobble</h3>
+  <iframe src="https://www.retrogames.cc/embed/20077-bubble-bobble.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Kung Fu</h3>
+  <iframe src="https://www.retrogames.cc/embed/20040-kung-fu-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Galaga</h3>
+  <iframe src="https://www.retrogames.cc/embed/26376-galaga.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Arkanoid</h3>
+  <iframe src="https://www.retrogames.cc/embed/20020-arkanoid-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Ice Climber</h3>
+  <iframe src="https://www.retrogames.cc/embed/20075-ice-climber-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Excitebike</h3>
+  <iframe src="https://www.retrogames.cc/embed/20037-excitebike-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Dig Dug</h3>
+  <iframe src="https://www.retrogames.cc/embed/26368-dig-dug.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Punch-Out!!</h3>
+  <iframe src="https://www.retrogames.cc/embed/20122-mike-tysons-punch-out.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Ninja Gaiden</h3>
+  <iframe src="https://www.retrogames.cc/embed/20085-ninja-gaiden-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Darkwing Duck</h3>
+  <iframe src="https://www.retrogames.cc/embed/20076-darkwing-duck-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Captain America and The Avengers</h3>
+  <iframe src="https://www.retrogames.cc/embed/26390-captain-america-and-the-avengers.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Duck Tales</h3>
+  <iframe src="https://www.retrogames.cc/embed/20065-ducktales-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<div class="game-card">
+  <h3>Tiny Toon - Buster Busts Loose!</h3>
+  <iframe src="https://www.retrogames.cc/embed/19245-tiny-toon-adventures-buster-busts-loose-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+
+<!-- 1 -->
+<div class="game-card">
+  <h3>Kirby's Adventure</h3>
+  <iframe src="https://www.retrogames.cc/embed/20076-kirbys-adventure-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 2 -->
+<div class="game-card">
+  <h3>Yoshi's Island</h3>
+  <iframe src="https://www.retrogames.cc/embed/20843-yoshis-island-super-mario-world-2.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 3 -->
+<div class="game-card">
+  <h3>Chrono Trigger</h3>
+  <iframe src="https://www.retrogames.cc/embed/20899-chrono-cross-euro.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 4 -->
+<div class="game-card">
+  <h3>Legend of Zelda</h3>
+  <iframe src="https://www.retrogames.cc/embed/19979-the-legend-of-zelda-nes.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 5 -->
+<div class="game-card">
+  <h3>Metroid</h3>
+  <iframe src="https://www.retrogames.cc/embed/20064-metroid-nes.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 6 -->
+<div class="game-card">
+  <h3>Castlevania</h3>
+  <iframe src="https://www.retrogames.cc/embed/20003-castlevania-nes.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 7 -->
+<div class="game-card">
+  <h3>Castlevania III</h3>
+  <iframe src="https://www.retrogames.cc/embed/20005-castlevania-iii-drachenblut-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 8 -->
+<div class="game-card">
+  <h3>Final Fantasy VI</h3>
+  <iframe src="https://www.retrogames.cc/embed/20881-final-fantasy-vi.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 9 -->
+<div class="game-card">
+  <h3>EarthBound</h3>
+  <iframe src="https://www.retrogames.cc/embed/20821-earthbound-japan.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 10 -->
+<div class="game-card">
+  <h3>Super Ghouls ’n Ghosts</h3>
+  <iframe src="https://www.retrogames.cc/embed/20919-super-ghouls-n-ghosts.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 11 -->
+<div class="game-card">
+  <h3>Super Punch-Out!!</h3>
+  <iframe src="https://www.retrogames.cc/embed/20913-super-punch-out.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 12 -->
+<div class="game-card">
+  <h3>Super Mario Kart</h3>
+  <iframe src="https://www.retrogames.cc/embed/20841-super-mario-kart.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 13 -->
+<div class="game-card">
+  <h3>Donkey Kong Country</h3>
+  <iframe src="https://www.retrogames.cc/embed/20853-donkey-kong-country.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 14 -->
+<div class="game-card">
+  <h3>Star Fox</h3>
+  <iframe src="https://www.retrogames.cc/embed/20851-star-fox.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 15 -->
+<div class="game-card">
+  <h3>Kirby Super Star</h3>
+  <iframe src="https://www.retrogames.cc/embed/20857-kirby-super-star.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 16 -->
+<div class="game-card">
+  <h3>Secret of Mana</h3>
+  <iframe src="https://www.retrogames.cc/embed/20911-secret-of-mana.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 17 -->
+<div class="game-card">
+  <h3>Breath of Fire</h3>
+  <iframe src="https://www.retrogames.cc/embed/20905-breath-of-fire-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 18 -->
+<div class="game-card">
+  <h3>Super Metroid</h3>
+  <iframe src="https://www.retrogames.cc/embed/20855-super-metroid.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 19 -->
+<div class="game-card">
+  <h3>Super Mario World</h3>
+  <iframe src="https://www.retrogames.cc/embed/20837-super-mario-world.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 20 -->
+<div class="game-card">
+  <h3>F-Zero</h3>
+  <iframe src="https://www.retrogames.cc/embed/20847-f-zero.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 21 -->
+<div class="game-card">
+  <h3>Emerald Dragon</h3>
+  <iframe src="https://www.retrogames.cc/embed/20909-emerald-dragon.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 22 -->
+<div class="game-card">
+  <h3>Breath of Fire II</h3>
+  <iframe src="https://www.retrogames.cc/embed/20907-breath-of-fire-ii-usa.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 23 -->
+<div class="game-card">
+  <h3>Seiken Densetsu 3</h3>
+  <iframe src="https://www.retrogames.cc/embed/20917-seiken-densetsu-3-japan.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 24 -->
+<div class="game-card">
+  <h3>Super Star Wars</h3>
+  <iframe src="https://www.retrogames.cc/embed/20903-super-star-wars.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+<!-- 25 -->
+<div class="game-card">
+  <h3>Super Turrican</h3>
+  <iframe src="https://www.retrogames.cc/embed/20899-super-turrican.html" width="100%" height="400" allowfullscreen></iframe>
+</div>
+  </section>  <section id="topup">
+    <div class="form-card">
+      <h2>Topup Koin</h2>
+      <p>Isi formulir dan kirim bukti pembayaran ke WhatsApp:</p>
+      <input type="text" placeholder="Nama Kamu" />
+      <textarea placeholder="Jumlah Koin & Bukti Pembayaran..."></textarea>
+      <a href="https://wa.me/6285810526151?text=Halo%20Admin,%20saya%20ingin%20topup%20koin" target="_blank">
+        <button>Kirim ke Admin WhatsApp</button>
+      </a>
+    </div>
+  </section>  <section id="voting">
+    <div class="form-card">
+      <h2>Voting Request Update</h2>
+      <input type="text" placeholder="Judul Fitur / Game / Lagu" />
+      <textarea placeholder="Alasan & Harapan"></textarea>
+      <a href="https://wa.me/6285810526151?text=Halo%20Admin,%20saya%20mau%20request%20fitur%20atau%20game" target="_blank">
+        <button>Kirim Voting</button>
+      </a>
+    </div>
+  </section>  <section id="partner">
+    <div class="form-card">
+      <h2>Daftar Jadi Partner / Artis</h2>
+      <input type="text" placeholder="Nama Artis / Band" />
+      <textarea placeholder="Judul Lagu, Link Demo, Kontak"></textarea>
+      <a href="https://wa.me/6285810526151?text=Halo%20Admin,%20saya%20ingin%20rilis%20lagu%20di%20platform%20kamu" target="_blank">
+        <button>Kirim via WhatsApp</button>
+      </a>
+    </div>
+  </section>  <footer>
+    &copy; 2025 Nabila Ahmad Studio. All rights reserved.
+  </footer>  <script>
+    const tabs = document.querySelectorAll('section');
+    function showTab(id) {
+      tabs.forEach(t => t.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    const bgMusic = new Audio("https://vgchzuqtrmohyzojvngw.supabase.co/storage/v1/object/public/seleniumplatformassets//Drunk%20Confessions%20%20%20%20-%20Lyrik%20-%20Nabila%20Ahmad_HD.mp4");
+    bgMusic.loop = true;
+    bgMusic.volume = 0.6;
+    bgMusic.autoplay = true;
+    window.addEventListener('load', () => {
+      bgMusic.play().catch(() => {});
+    });
+
+    let isPlaying = true;
+    function toggleMusic() {
+      if (isPlaying) {
+        bgMusic.pause();
+        document.querySelector('.bg-music-control').innerText = '🔊 Nyalakan Musik';
+      } else {
+        bgMusic.play();
+        document.querySelector('.bg-music-control').innerText = '🔇 Matikan Musik';
+      }
+      isPlaying = !isPlaying;
+    }
+  </script></body>
+</html>
